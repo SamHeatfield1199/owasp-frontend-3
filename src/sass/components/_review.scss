@@ -1,0 +1,36 @@
+.review {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1.6rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem rgba($color-black, 0.25);
+
+  &__username {
+    grid-column: 1 / 2;
+    justify-self: center;
+  }
+
+  &__avatar {
+    $size: 5rem;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    justify-self: center;
+  }
+
+  &__rating {
+    pointer-events: none;
+    grid-column: 1 / 2;
+  }
+
+  &__comment {
+    grid-row: 1 / 5;
+    grid-column: 2 / 5;
+    line-height: 2.4rem;
+    justify-self: flex-start;
+  }
+}

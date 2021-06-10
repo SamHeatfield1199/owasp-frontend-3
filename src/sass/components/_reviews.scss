@@ -1,4 +1,4 @@
-.sign-in {
+.reviews {
   width: 30rem;
 
   display: flex;
@@ -8,8 +8,6 @@
 
   text-align: center;
 
-  transform: translateY(-50%);
-
   &__heading {
     font-size: 2.8rem;
     font-weight: 400;
@@ -17,7 +15,7 @@
     margin: 0 auto 2rem;
 
     &::after {
-      content: "";
+      content: '';
       display: block;
       width: 12rem;
       height: 2px;
@@ -26,20 +24,15 @@
     }
   }
 
-  &__btn {
-    align-self: flex-end;
-  }
-
-  &__input {
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     width: 100%;
   }
 
   &__img {
     width: 30rem;
     height: 22rem;
-  }
-  &__rating {
-    width: 200;
-    display: flex;
   }
 }

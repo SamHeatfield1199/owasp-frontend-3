@@ -1,0 +1,14 @@
+.review-form {
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &__input {
+    width: 100%;
+  }
+
+  &__rating {
+    width: 200;
+    display: flex;
+  }
+}
